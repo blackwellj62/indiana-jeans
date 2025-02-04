@@ -1,9 +1,11 @@
+import { locationTypeChoices } from "./location.js"
 import { ownsJeans } from "./ownsJeans.js"
 
 const container = document.querySelector("#container")
 
-const render = () => {
+const render = async () => {
     const jeanOwnersHTML = ownsJeans()
-    container.innerHTML = jeanOwnersHTML
+    const locationHTML = await locationTypeChoices()
+    container.innerHTML = `${jeanOwnersHTML} ${locationHTML}`
 }
 render()
