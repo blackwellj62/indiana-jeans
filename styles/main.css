@@ -1,0 +1,29 @@
+body {
+    background-color:cornflowerblue;
+}
+h1 {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#container {
+    display:grid;
+    padding: 20px
+}
+
+#saveSubmission {
+    width:300px;
+    margin: 41px 250px;
+    height: 40px;
+}
+
+.submission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px dashed antiquewhite;
+    margin: 10px;
+    padding: 10px;
+    background-color: darkgoldenrod;
+    width: 500px;
+}
